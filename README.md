@@ -60,3 +60,8 @@ photoacoustic-sensor-reconstruction/
 ## Status
 
 Project initialization — Day 1 of 60.
+## Development Log
+
+### Day 2
+- Practiced Git workflow.
+- Learned how to stage, commit, and push changes.
