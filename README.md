@@ -65,3 +65,44 @@ Project initialization — Day 1 of 60.
 ### Day 2
 - Practiced Git workflow.
 - Learned how to stage, commit, and push changes.
+
+- ## Days 3–4 — NumPy Fundamentals
+
+### Goal
+Learn the NumPy fundamentals required to work with sensor-array data and numerical matrices in the photoacoustic reconstruction project.
+
+### What I Learned
+- Created and manipulated NumPy arrays
+- Worked with multidimensional arrays and understood `shape` and `ndim`
+- Practiced array indexing and slicing
+- Selected individual sensors and time samples from a sensor matrix
+- Learned how `axis=0` and `axis=1` affect array operations
+- Applied statistical operations:
+  - `mean`
+  - `min`
+  - `max`
+  - `std`
+  - `sum`
+- Used `argmax` to identify the sensor with the highest mean value
+- Worked with simulated sensor data represented as a `128 × 2000` matrix
+
+### Project Connection
+The simulated sensor matrix represents:
+
+- **128 sensors**
+- **2000 time samples per sensor**
+
+This structure will later be used to simulate missing sensor data, apply interpolation methods, and reconstruct the photoacoustic image.
+
+### Practice Notebook
+All exercises and experiments from these two days were documented separately in:
+
+`notebooks/day03_04_numpy_basics.ipynb`
+
+### Status
+- [x] NumPy basics
+- [x] Array indexing and slicing
+- [x] Axis operations
+- [x] Statistical operations
+- [x] Sensor-matrix practice
+- [x] NumPy fundamentals completed
