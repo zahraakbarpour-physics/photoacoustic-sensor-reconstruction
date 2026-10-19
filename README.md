@@ -59,7 +59,17 @@ photoacoustic-sensor-reconstruction/
 
 ## Status
 
-Project initialization — Day 1 of 60.
+
+- [x] Project initialization and Git workflow
+- [x] NumPy fundamentals
+- [x] Signal visualization and noise modeling
+- [x] Missing sensor data and basic interpolation practice
+- [x] Initial photoacoustic phantom and sensor-array simulation
+- [x] Synthetic sensor signals and basic missing-signal reconstruction
+
+**Current progress:** Days 1–20 of 60 (foundational simulation and signal reconstruction exercises).
+
+**Next steps:** Implement a consistent 2D simulation, develop Delay-and-Sum (DAS) beamforming, and establish a baseline reconstruction before comparing interpolation methods.
 ## Development Log
 
 ### Day 2
@@ -160,6 +170,79 @@ This work establishes the foundation for analyzing sensor measurements under rea
 ### Project Relevance
 
 Missing or inactive sensors can produce incomplete measurements in photoacoustic imaging systems. Linear interpolation provides a simple baseline for estimating missing values from available data. This baseline will support future comparisons with more advanced reconstruction methods, including cubic interpolation.
+---
+
+## Days 9–12 — Photoacoustic Phantom and Sensor Array
+
+### Objective
+Build a simple photoacoustic phantom and explore the geometry of an acoustic sensor array.
+
+### Work Completed
+- Created a simple 2D phantom representing relative optical absorption.
+- Calculated an initial pressure distribution using a simplified model.
+- Generated a circular array of 16 sensors.
+- Calculated source-to-sensor distances.
+- Estimated acoustic time-of-flight (ToF) values using an assumed speed of sound.
+- Investigated how source position affects sensor arrival times.
+
+### Key Concepts
+- Photoacoustic phantom modeling
+- Sensor-array geometry
+- Euclidean distance
+- Acoustic time-of-flight
+- Speed of sound and arrival-time estimation
+
+**Tools:** Python, NumPy, Matplotlib
+
+## Days 13–16 — Synthetic Signals and Missing Sensor Data
+
+### Objective
+Generate simple synthetic sensor signals and investigate the effect of missing sensors.
+
+### Work Completed
+- Generated Gaussian-shaped synthetic acoustic pulses.
+- Visualized signals from multiple sensors.
+- Simulated a missing sensor by replacing its signal with `NaN` values.
+- Estimated a missing signal using neighboring sensor measurements.
+
+### Key Concepts
+- Synthetic signal generation
+- Time-domain signal visualization
+- Missing sensor simulation
+- Basic signal interpolation
+
+**Tools:** Python, NumPy, Matplotlib
+
+## Days 17–20 — Reconstruction Error and Method Comparison
+
+### Objective
+Evaluate simple missing-signal reconstruction methods and compare their performance.
+
+### Work Completed
+- Calculated mean squared error (MSE) and root mean squared error (RMSE).
+- Compared original and reconstructed synthetic signals.
+- Improved the initial reconstruction by estimating the missing sensor's arrival time.
+- Compared neighboring-signal averaging with arrival-time-based Gaussian pulse reconstruction.
+- Saved figures illustrating the signals, missing data, reconstruction results, and errors.
+
+### Key Concepts
+- Reconstruction error metrics
+- MSE and RMSE
+- Signal comparison
+- Arrival-time estimation
+- Limitations of simplified synthetic models
+
+### Important Limitation
+These exercises use simplified synthetic signals and do not yet represent a complete physical acoustic wave-propagation model or a full 2D image reconstruction pipeline.
+
+### Next Steps
+- Develop a consistent 2D acoustic simulation.
+- Implement Delay-and-Sum (DAS) beamforming.
+- Reconstruct a baseline image using complete sensor data.
+- Introduce sensor dropout and compare interpolation methods.
+
+**Tools:** Python, NumPy, Matplotlib
+
 
 **Tools:** Python, NumPy, SciPy, Matplotlib, Jupyter Notebook
 
