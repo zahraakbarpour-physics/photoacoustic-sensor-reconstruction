@@ -1,0 +1,17 @@
+{
+    "num_sensors": 32,
+    "sampling_frequency_hz": 10000000.0,
+    "image_grid": [
+        100,
+        100
+    ],
+    "true_source_mm": [
+        5.0,
+        20.0
+    ],
+    "estimated_source_mm": [
+        5.15151515151515,
+        19.797979797979796
+    ],
+    "localization_error_mm": 0.2525252525252526
+}
