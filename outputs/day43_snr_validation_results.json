@@ -1,0 +1,30 @@
+{
+    "day": 43,
+    "metric": "Reference-based SNR",
+    "test_identical_images": "passed",
+    "test_increasing_error": "passed",
+    "test_day42_results": "passed",
+    "small_error_snr_db": 48.750612633917086,
+    "large_error_snr_db": 14.771212547196624,
+    "dropout_percentages": [
+        12.5,
+        25.0,
+        37.5
+    ],
+    "snr_incomplete_db": [
+        17.67416328787648,
+        11.75822309469299,
+        8.057002379550001
+    ],
+    "snr_linear_db": [
+        50.14374405198949,
+        44.83025419331036,
+        38.928760490143276
+    ],
+    "snr_spline_db": [
+        52.125574669649495,
+        52.16525036650623,
+        52.41537718055202
+    ],
+    "reference_note": "Full-array DAS is a computational reference, not independent physical ground truth."
+}
