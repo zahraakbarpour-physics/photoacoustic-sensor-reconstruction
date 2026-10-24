@@ -1,0 +1,52 @@
+{
+    "reference": "Full-array DAS image",
+    "inactive_sensor_count": 8,
+    "inactive_sensor_percentage": 25.0,
+    "patterns": {
+        "Random": {
+            "inactive_sensor_indices": [
+                2,
+                5,
+                9,
+                12,
+                17,
+                20,
+                25,
+                29
+            ],
+            "PSNR_incomplete_dB": 21.53635595841092,
+            "PSNR_linear_dB": 59.24821995997222,
+            "PSNR_spline_dB": 88.16834029578936
+        },
+        "Periodic": {
+            "inactive_sensor_indices": [
+                1,
+                5,
+                9,
+                13,
+                17,
+                21,
+                25,
+                29
+            ],
+            "PSNR_incomplete_dB": 21.555529270829386,
+            "PSNR_linear_dB": 59.39857232503922,
+            "PSNR_spline_dB": 88.2105282940938
+        },
+        "Block": {
+            "inactive_sensor_indices": [
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19
+            ],
+            "PSNR_incomplete_dB": 20.579056572167417,
+            "PSNR_linear_dB": 39.78887135651832,
+            "PSNR_spline_dB": 54.79238570776072
+        }
+    }
+}
