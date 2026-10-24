@@ -1,0 +1,42 @@
+{
+    "day": 31,
+    "method": "Cubic spline interpolation",
+    "num_sensors": 32,
+    "num_inactive_sensors": 8,
+    "inactive_sensor_indices_zero_based": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21,
+        25,
+        29
+    ],
+    "boundary_condition": "natural",
+    "image_metrics_vs_full_sensor_baseline": {
+        "linear_interpolation": {
+            "MAE": 0.021956865000956137,
+            "RMSE": 0.03271810946243454,
+            "Max_Absolute_Error": 0.13835454087431742
+        },
+        "cubic_spline_interpolation": {
+            "MAE": 0.0040471658549425015,
+            "RMSE": 0.0064461876578149075,
+            "Max_Absolute_Error": 0.019544590249953586
+        }
+    },
+    "inactive_signal_metrics": {
+        "linear_interpolation": {
+            "MAE": 0.0011534586447801273,
+            "RMSE": 0.004136427374714731,
+            "Max_Absolute_Error": 0.04299596036173803
+        },
+        "cubic_spline_interpolation": {
+            "MAE": 0.00015405604650551804,
+            "RMSE": 0.0011045742024590932,
+            "Max_Absolute_Error": 0.01727057403918475
+        }
+    },
+    "reference_note": "The full-sensor DAS image and original synthetic signals are simulation baselines, not experimental ground truth."
+}
