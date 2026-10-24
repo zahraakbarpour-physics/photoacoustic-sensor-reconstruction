@@ -1,0 +1,50 @@
+{
+    "day": 30,
+    "method": "Linear interpolation across sensor positions",
+    "total_sensors": 32,
+    "active_sensor_count": 24,
+    "inactive_sensor_count": 8,
+    "inactive_indices_zero_based": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21,
+        25,
+        29
+    ],
+    "full_sensor_baseline": {
+        "peak_intensity": 31.897689381836166,
+        "estimated_x_mm": 5.15151515151515,
+        "estimated_y_mm": 19.797979797979796,
+        "localization_error_mm": 0.2525252525252526
+    },
+    "inactive_without_reconstruction": {
+        "peak_metrics": {
+            "peak_intensity": 23.92282763019889,
+            "estimated_x_mm": 5.15151515151515,
+            "estimated_y_mm": 19.797979797979796,
+            "localization_error_mm": 0.2525252525252526
+        },
+        "comparison_to_full": {
+            "MAE": 1.0958713703784677,
+            "RMSE": 1.519872799577488,
+            "maximum_absolute_difference": 7.9748617516372775
+        }
+    },
+    "linear_interpolation": {
+        "peak_metrics": {
+            "peak_intensity": 30.917746319981354,
+            "estimated_x_mm": 5.15151515151515,
+            "estimated_y_mm": 19.797979797979796,
+            "localization_error_mm": 0.2525252525252526
+        },
+        "comparison_to_full": {
+            "MAE": 0.08324952613201965,
+            "RMSE": 0.12833387648946049,
+            "maximum_absolute_difference": 0.9799430618548115
+        }
+    },
+    "note": "Synthetic Gaussian signals. Sensor interpolation is evaluated against the full-sensor simulation baseline, which is known in this experiment."
+}
