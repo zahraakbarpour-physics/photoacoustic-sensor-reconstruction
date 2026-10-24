@@ -1,0 +1,40 @@
+{
+    "day": 29,
+    "method": "DAS with linear interpolation in time",
+    "total_sensors": 32,
+    "inactive_sensor_indices_zero_based": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21,
+        25,
+        29
+    ],
+    "inactive_sensor_count": 8,
+    "active_sensor_count": 24,
+    "inactive_fraction": 0.25,
+    "true_source_position_mm": [
+        5.0,
+        20.0
+    ],
+    "all_sensors": {
+        "peak_intensity": 31.897689381836166,
+        "estimated_x_mm": 5.15151515151515,
+        "estimated_y_mm": 19.797979797979796,
+        "localization_error_mm": 0.2525252525252526
+    },
+    "inactive_sensors": {
+        "peak_intensity": 23.92282763019889,
+        "estimated_x_mm": 5.15151515151515,
+        "estimated_y_mm": 19.797979797979796,
+        "localization_error_mm": 0.2525252525252526
+    },
+    "raw_image_comparison": {
+        "mean_absolute_difference": 1.0958713703784677,
+        "rmse": 1.519872799577488,
+        "maximum_absolute_difference": 7.9748617516372775
+    },
+    "note": "Synthetic Gaussian-pulse simulation. No missing-data interpolation across sensors was applied. Image amplitudes are not normalized separately."
+}
