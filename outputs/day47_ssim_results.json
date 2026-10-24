@@ -1,0 +1,10 @@
+{
+    "reference": "Full-array DAS image",
+    "inactive_sensor_count": 8,
+    "inactive_sensor_percentage": 25.0,
+    "ssim": {
+        "Incomplete": 0.9311070624531135,
+        "Linear": 0.9999492981530208,
+        "Spline": 0.9999998815161539
+    }
+}
