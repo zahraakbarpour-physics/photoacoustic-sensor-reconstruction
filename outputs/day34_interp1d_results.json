@@ -1,0 +1,24 @@
+{
+    "day": 34,
+    "method": "scipy.interpolate.interp1d",
+    "interpolation": "linear",
+    "num_sensors": 32,
+    "num_samples": 600,
+    "sampling_frequency_hz": 10000000.0,
+    "num_inactive_sensors": 8,
+    "inactive_sensor_indices": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21,
+        25,
+        29
+    ],
+    "missing_sensor_percentage": 25.0,
+    "evaluation_region": "inactive sensors only",
+    "signal_mae": 0.0011534586447801275,
+    "signal_rmse": 0.004136427374714731,
+    "signal_max_absolute_error": 0.04299596036173803
+}
