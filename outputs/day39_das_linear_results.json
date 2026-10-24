@@ -1,0 +1,34 @@
+{
+    "day": 39,
+    "method": "DAS with linear interpolation",
+    "num_sensors": 32,
+    "num_inactive_sensors": 8,
+    "dropout_fraction": 0.25,
+    "inactive_sensor_indices_zero_based": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21,
+        25,
+        29
+    ],
+    "reference": "Full-array DAS image (synthetic reference, not physical ground truth)",
+    "missing_sensor_image_errors": {
+        "MAE": 1.87869445319226,
+        "RMSE": 2.672719028774945,
+        "Max absolute error": 7.991632098505814
+    },
+    "linear_interpolation_image_errors": {
+        "MAE": 0.02309349721662082,
+        "RMSE": 0.03424056163235236,
+        "Max absolute error": 0.13848989583368265
+    },
+    "rmse_reduction_percent": 98.71888659961213,
+    "outputs": [
+        "day39_sensor_mask.png",
+        "day39_das_linear_comparison.png",
+        "day39_das_absolute_error.png"
+    ]
+}
