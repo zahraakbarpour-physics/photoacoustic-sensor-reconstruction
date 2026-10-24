@@ -1,0 +1,102 @@
+{
+    "day": 33,
+    "num_sensors": 32,
+    "inactive_sensor_count_per_pattern": 8,
+    "inactive_ratio_percent": 25.0,
+    "reference_note": "Full-sensor synthetic DAS image; not experimental ground truth.",
+    "results_by_failure_pattern": {
+        "distributed": {
+            "inactive_sensor_count": 8,
+            "inactive_ratio_percent": 25.0,
+            "inactive_indices_zero_based": [
+                0,
+                4,
+                9,
+                13,
+                18,
+                22,
+                27,
+                31
+            ],
+            "image_metrics_vs_full_sensor_baseline": {
+                "no_interpolation": {
+                    "MAE": 1.8862898661722436,
+                    "RMSE": 2.473651310466724,
+                    "Max_Absolute_Error": 7.995308204272561
+                },
+                "linear_interpolation": {
+                    "MAE": 0.07952429615317717,
+                    "RMSE": 0.10361393324144637,
+                    "Max_Absolute_Error": 0.2932466279790429
+                },
+                "cubic_spline_interpolation": {
+                    "MAE": 0.024159731044866403,
+                    "RMSE": 0.03334402690013598,
+                    "Max_Absolute_Error": 0.11602437343920613
+                }
+            }
+        },
+        "periodic": {
+            "inactive_sensor_count": 8,
+            "inactive_ratio_percent": 25.0,
+            "inactive_indices_zero_based": [
+                1,
+                5,
+                9,
+                13,
+                17,
+                21,
+                25,
+                29
+            ],
+            "image_metrics_vs_full_sensor_baseline": {
+                "no_interpolation": {
+                    "MAE": 1.8897996172951061,
+                    "RMSE": 2.525260652569211,
+                    "Max_Absolute_Error": 7.995319046926902
+                },
+                "linear_interpolation": {
+                    "MAE": 0.021956865000956137,
+                    "RMSE": 0.03271810946243454,
+                    "Max_Absolute_Error": 0.13835454087431742
+                },
+                "cubic_spline_interpolation": {
+                    "MAE": 0.0040471658549425015,
+                    "RMSE": 0.0064461876578149075,
+                    "Max_Absolute_Error": 0.019544590249953586
+                }
+            }
+        },
+        "contiguous": {
+            "inactive_sensor_count": 8,
+            "inactive_ratio_percent": 25.0,
+            "inactive_indices_zero_based": [
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19
+            ],
+            "image_metrics_vs_full_sensor_baseline": {
+                "no_interpolation": {
+                    "MAE": 1.784393524284803,
+                    "RMSE": 2.997789661593279,
+                    "Max_Absolute_Error": 7.995751761086204
+                },
+                "linear_interpolation": {
+                    "MAE": 0.1996056624236192,
+                    "RMSE": 0.3181183651353587,
+                    "Max_Absolute_Error": 0.833081725322323
+                },
+                "cubic_spline_interpolation": {
+                    "MAE": 0.033516077947516806,
+                    "RMSE": 0.05500038067895848,
+                    "Max_Absolute_Error": 0.183839779789416
+                }
+            }
+        }
+    }
+}
