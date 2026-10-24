@@ -1,0 +1,22 @@
+{
+    "day": 28,
+    "method": "DAS with linear interpolation",
+    "reference": "idealized Gaussian point source",
+    "image_shape": [
+        100,
+        100
+    ],
+    "normalization": "each image scaled to [0, 1]",
+    "metrics": {
+        "MSE": 0.033332775445759785,
+        "MAE": 0.13514103954894868,
+        "SNR_dB": -15.652097852610666,
+        "PSNR_dB": 14.771285234053305,
+        "SSIM_approx": 0.11334350541348563
+    },
+    "notes": [
+        "SNR uses reference mean-square power divided by MSE.",
+        "PSNR uses a data range of 1.",
+        "SSIM_approx is a Gaussian-filter-based implementation, not the official scikit-image implementation."
+    ]
+}
