@@ -1,0 +1,78 @@
+{
+    "day": 38,
+    "num_sensors": 32,
+    "num_inactive_sensors": 8,
+    "missing_percentage": 25.0,
+    "evaluation_region": "inactive sensor signals only",
+    "patterns": {
+        "Random": {
+            "inactive_indices": [
+                2,
+                12,
+                17,
+                20,
+                22,
+                25,
+                28,
+                30
+            ],
+            "linear": {
+                "MAE": 0.0009001366570582836,
+                "RMSE": 0.0033126140878147934,
+                "maximum_absolute_error": 0.04073211203145566
+            },
+            "cubic_spline": {
+                "MAE": 9.789576361211814e-05,
+                "RMSE": 0.0005336886327850462,
+                "maximum_absolute_error": 0.00732144844907745
+            },
+            "spline_rmse_reduction_percent": 83.88919992980225
+        },
+        "Periodic": {
+            "inactive_indices": [
+                1,
+                5,
+                9,
+                13,
+                17,
+                21,
+                25,
+                29
+            ],
+            "linear": {
+                "MAE": 0.0011534586447801275,
+                "RMSE": 0.004136427374714731,
+                "maximum_absolute_error": 0.04299596036173803
+            },
+            "cubic_spline": {
+                "MAE": 0.00015405604650551804,
+                "RMSE": 0.0011045742024590932,
+                "maximum_absolute_error": 0.01727057403918475
+            },
+            "spline_rmse_reduction_percent": 73.29641977492062
+        },
+        "Block": {
+            "inactive_indices": [
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19
+            ],
+            "linear": {
+                "MAE": 0.007768192782439659,
+                "RMSE": 0.024938576674529592,
+                "maximum_absolute_error": 0.14171709128507226
+            },
+            "cubic_spline": {
+                "MAE": 0.0013922730491430426,
+                "RMSE": 0.004756758817708815,
+                "maximum_absolute_error": 0.036826053967251915
+            },
+            "spline_rmse_reduction_percent": 80.92610143799018
+        }
+    }
+}
