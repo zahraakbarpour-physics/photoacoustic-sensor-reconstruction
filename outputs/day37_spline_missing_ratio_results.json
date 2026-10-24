@@ -1,0 +1,80 @@
+{
+    "day": 37,
+    "method_comparison": [
+        "linear",
+        "cubic_spline"
+    ],
+    "num_sensors": 32,
+    "missing_sensor_counts": {
+        "4": {
+            "missing_percentage": 12.5,
+            "inactive_indices": [
+                1,
+                5,
+                9,
+                13
+            ],
+            "linear": {
+                "MAE": 0.0017030284252319765,
+                "RMSE": 0.00553339594816301,
+                "maximum_absolute_error": 0.04299596036173803
+            },
+            "cubic_spline": {
+                "MAE": 0.00028554785878874306,
+                "RMSE": 0.0015579167932821842,
+                "maximum_absolute_error": 0.017270574038367625
+            }
+        },
+        "8": {
+            "missing_percentage": 25.0,
+            "inactive_indices": [
+                1,
+                5,
+                9,
+                13,
+                17,
+                21,
+                25,
+                29
+            ],
+            "linear": {
+                "MAE": 0.0011534586447801275,
+                "RMSE": 0.004136427374714731,
+                "maximum_absolute_error": 0.04299596036173803
+            },
+            "cubic_spline": {
+                "MAE": 0.00015405604650551804,
+                "RMSE": 0.0011045742024590932,
+                "maximum_absolute_error": 0.01727057403918475
+            }
+        },
+        "12": {
+            "missing_percentage": 37.5,
+            "inactive_indices": [
+                1,
+                3,
+                5,
+                9,
+                11,
+                13,
+                17,
+                19,
+                21,
+                25,
+                27,
+                29
+            ],
+            "linear": {
+                "MAE": 0.0011474168409715422,
+                "RMSE": 0.004111522920916936,
+                "maximum_absolute_error": 0.04299596036173803
+            },
+            "cubic_spline": {
+                "MAE": 0.0001410823150688816,
+                "RMSE": 0.0010535635114034398,
+                "maximum_absolute_error": 0.01956109086520208
+            }
+        }
+    },
+    "evaluation_region": "inactive sensor signals only"
+}
