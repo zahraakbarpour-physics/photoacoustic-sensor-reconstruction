@@ -1,0 +1,37 @@
+{
+    "day": 41,
+    "metric": "Reference-based SNR",
+    "num_sensors": 32,
+    "num_inactive_sensors": 8,
+    "dropout_fraction": 0.25,
+    "inactive_sensor_indices_zero_based": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21,
+        25,
+        29
+    ],
+    "reference": "Full-array DAS image from synthetic signals; not physical ground truth",
+    "definition": "10 * log10(sum(reference**2) / sum((reference - estimate)**2))",
+    "results": {
+        "incomplete": {
+            "SNR_dB": 12.02691522999852,
+            "signal_power": 1139195.168441126,
+            "error_power": 71434.27006775684
+        },
+        "linear_interpolation": {
+            "SNR_dB": 49.87516375168656,
+            "signal_power": 1139195.168441126,
+            "error_power": 11.724160608989203
+        },
+        "cubic_spline_interpolation": {
+            "SNR_dB": 64.7738669231756,
+            "signal_power": 1139195.168441126,
+            "error_power": 0.3794997044846321
+        }
+    },
+    "output_plot": "day41_snr_comparison.png"
+}
