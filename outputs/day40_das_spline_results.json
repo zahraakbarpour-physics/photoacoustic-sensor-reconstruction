@@ -1,0 +1,46 @@
+{
+    "day": 40,
+    "method": "DAS with cubic spline interpolation",
+    "num_sensors": 32,
+    "num_inactive_sensors": 8,
+    "dropout_fraction": 0.25,
+    "inactive_sensor_indices_zero_based": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21,
+        25,
+        29
+    ],
+    "reference": "Full-array DAS image; synthetic computational reference, not physical ground truth",
+    "image_errors": {
+        "incomplete": {
+            "MAE": 1.87869445319226,
+            "RMSE": 2.672719028774945,
+            "Max absolute error": 7.991632098505814
+        },
+        "linear_interpolation": {
+            "MAE": 0.02309349721662082,
+            "RMSE": 0.03424056163235236,
+            "Max absolute error": 0.13848989583368265
+        },
+        "cubic_spline_interpolation": {
+            "MAE": 0.003930298799607742,
+            "RMSE": 0.006160354733979466,
+            "Max absolute error": 0.019551118761615527
+        }
+    },
+    "rmse_reduction_vs_incomplete_percent": {
+        "linear": 98.71888659961213,
+        "cubic_spline": 99.76950982622355
+    },
+    "spline_rmse_reduction_vs_linear_percent": 82.00860488176448,
+    "outputs": [
+        "day40_sensor_mask.png",
+        "day40_das_interpolation_comparison.png",
+        "day40_das_absolute_error.png",
+        "day40_das_rmse_comparison.png"
+    ]
+}
