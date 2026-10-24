@@ -1,0 +1,20 @@
+{
+    "day": 27,
+    "reference_type": "idealized Gaussian point source",
+    "image_shape": [
+        100,
+        100
+    ],
+    "source_position_mm": [
+        5.0,
+        20.0
+    ],
+    "gaussian_sigma_mm": 0.8,
+    "peak_position_mm": [
+        5.15151515151515,
+        20.2020202020202
+    ],
+    "localization_error_mm": 0.2525252525252498,
+    "maximum_intensity": 1.0,
+    "minimum_intensity": 0.0
+}
