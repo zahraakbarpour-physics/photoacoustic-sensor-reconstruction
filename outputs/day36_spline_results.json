@@ -1,0 +1,28 @@
+{
+    "day": 36,
+    "num_sensors": 32,
+    "num_samples": 600,
+    "inactive_sensor_indices": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21,
+        25,
+        29
+    ],
+    "missing_sensor_percentage": 25.0,
+    "evaluation_region": "inactive sensor signals only",
+    "linear_interpolation": {
+        "MAE": 0.0011534586447801275,
+        "RMSE": 0.004136427374714731,
+        "maximum_absolute_error": 0.04299596036173803
+    },
+    "cubic_spline_interpolation": {
+        "MAE": 0.00015405604650551804,
+        "RMSE": 0.0011045742024590932,
+        "maximum_absolute_error": 0.01727057403918475
+    },
+    "spline_boundary_condition": "natural"
+}
