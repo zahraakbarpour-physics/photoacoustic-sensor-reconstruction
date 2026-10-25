@@ -294,7 +294,6 @@ It is not yet a validated physical wave-propagation model and has not been estab
 - Refactored the `delay_and_sum` function into `src/reconstruct.py`.
 - Created `tests/test_reconstruct.py` to validate the reconstructed image.
 - Verified the expected image dimensions and finite intensity values.
-- Confirmed that the estimated source location matched (5 mm, 20 mm) in the synthetic test configuration.
 - In the current synthetic test, the estimated source location matched the configured location of (5 mm, 20 mm).
 - Committed and pushed the changes to GitHub.
 
