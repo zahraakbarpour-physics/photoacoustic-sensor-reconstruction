@@ -296,6 +296,7 @@ It is not yet a validated physical wave-propagation model and has not been estab
 - Verified the expected image dimensions and finite intensity values.
 - In the current synthetic test, the estimated source location matched the configured location of (5 mm, 20 mm).
 - Committed and pushed the changes to GitHub.
+- In the current synthetic test, the estimated source location matched the configured location of (5 mm, 20 mm)
 
 ### Day 56 — Documentation
 - Updated the README to reflect the current project structure, methods, validation, and development history.
