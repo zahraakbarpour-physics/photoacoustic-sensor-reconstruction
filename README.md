@@ -144,4 +144,160 @@ It is not yet a validated physical wave-propagation model and has not been estab
 
 ## Development Log
 
-Daily experiments, implementation details, plots, and analysis are documented in the corresponding Jupyter notebooks in the `notebooks/` directory.
+## Development Log
+
+### Days 1–2 — Project Setup and Git Workflow
+- Initialized the project and established a Git/GitHub workflow.
+- Practiced staging, committing, and pushing changes.
+
+### Days 3–4 — NumPy Fundamentals
+- Practiced array creation, indexing, slicing, multidimensional arrays, and axis operations.
+- Applied statistical functions to simulated sensor matrices.
+- Documented exercises in `day03_04_numpy_basics.ipynb`.
+
+### Day 5 — Signal Visualization
+- Generated and visualized synthetic signals using NumPy and Matplotlib.
+- Explored random noise and saved figures.
+
+### Day 6 — Missing Data and Linear Interpolation
+- Represented missing measurements using `NaN`.
+- Practiced missing-value detection and linear interpolation.
+
+### Days 7–8
+- No separate notebook is currently listed for these days.
+
+### Days 9–12 — Photoacoustic Phantom and Sensor Array
+- Built a simplified 2D phantom.
+- Explored sensor-array geometry, source-to-sensor distances, and acoustic time of flight.
+
+### Days 13–16 — Synthetic Signals
+- Generated synthetic Gaussian-shaped acoustic pulses.
+- Explored sensor signals and simulated missing measurements.
+
+### Days 17–20 — Initial Reconstruction Exercises
+- Compared simplified signal-reconstruction approaches.
+- Calculated MSE and RMSE and examined arrival-time-based signal estimates.
+
+### Day 21
+- Continued the transition from foundational exercises to the photoacoustic reconstruction workflow.
+- See the corresponding project notebook and subsequent implementation notebooks for details.
+
+### Day 22 — Time-of-Flight Calculation
+- Calculated acoustic travel times for sensor measurements.
+- Documented the work in `day22_tof_calculation.ipynb`.
+
+### Day 23 — Delay-and-Sum Fundamentals
+- Developed the initial Delay-and-Sum reconstruction workflow.
+- Documented the work in `day23_delay_and_sum.ipynb`.
+
+### Day 24 — DAS Implementation
+- Implemented a 2D Delay-and-Sum reconstruction function.
+- Documented the implementation in `day24_das_implementation.ipynb`.
+
+### Day 25 — DAS with Interpolation
+- Combined DAS reconstruction with interpolated sensor signals.
+- Saved reconstruction results in the project workflow.
+
+### Day 26 — DAS Comparison
+- Compared DAS reconstruction approaches and documented the results.
+
+### Day 27 — Ground-Truth Reference
+- Established a reference image/source configuration for subsequent comparisons.
+
+### Day 28 — Image Quality Metrics
+- Introduced image-quality evaluation for reconstruction experiments.
+
+### Day 29 — Inactive Sensor Simulation
+- Simulated inactive sensors in the array.
+- Investigated the impact of missing sensor measurements.
+
+### Day 30 — Linear Sensor Interpolation
+- Implemented linear interpolation for missing sensor signals.
+- Compared reconstructed signals with reference measurements.
+
+### Day 31 — Cubic Spline Interpolation
+- Applied cubic spline interpolation to missing sensor data.
+
+### Day 32 — Missing Sensor Ratio Analysis
+- Investigated how the proportion of missing sensors affects reconstruction.
+
+### Day 33 — Sensor Failure Patterns
+- Compared different patterns of inactive sensors.
+
+### Day 34 — Linear `interp1d`
+- Explored linear interpolation using SciPy's `interp1d`.
+
+### Day 35 — Linear Interpolation Failure Patterns
+- Compared linear interpolation performance under different sensor-failure patterns.
+
+### Day 36 — Cubic Spline Interpolation
+- Continued implementing and evaluating cubic spline reconstruction.
+
+### Day 37 — Spline Missing-Ratio Analysis
+- Evaluated spline interpolation at different missing-sensor ratios.
+
+### Day 38 — Spline Failure-Pattern Comparison
+- Investigated spline interpolation performance under different failure patterns.
+
+### Day 39 — DAS with Linear Interpolation
+- Integrated linear interpolation into the DAS reconstruction workflow.
+
+### Day 40 — DAS with Spline Interpolation
+- Integrated cubic spline interpolation into DAS reconstruction.
+- Compared reconstruction errors between interpolation approaches.
+
+### Day 41 — SNR Evaluation
+- Introduced Signal-to-Noise Ratio evaluation for reconstructed data.
+
+### Day 42 — SNR Robustness Analysis
+- Compared SNR under different missing-sensor conditions.
+- Recorded an SNR value of approximately 28.75 dB in the relevant experiment.
+
+### Day 43 — SNR Validation
+- Continued validating the SNR evaluation workflow.
+
+### Day 44 — PSNR Evaluation
+- Evaluated Peak Signal-to-Noise Ratio for reconstructed images.
+- In one 25% random-dropout experiment, recorded PSNR values of 23.38 dB for incomplete data, 59.03 dB for linear interpolation, and 75.21 dB for spline interpolation.
+
+### Day 45 — PSNR Robustness Analysis
+- Investigated PSNR performance under different missing-sensor conditions.
+
+### Day 46 — PSNR Failure Patterns
+- Compared PSNR results across sensor-failure patterns.
+
+### Day 47 — SSIM Evaluation
+- Introduced Structural Similarity Index Measure evaluation.
+
+### Day 48 — SSIM Robustness Analysis
+- Investigated SSIM performance under different missing-sensor conditions.
+
+### Day 49 — Quality Metrics Comparison
+- Brought multiple image-quality metrics together for comparative analysis.
+
+### Day 50 — Automated Quality Evaluation
+- Automated quality-metric calculations.
+- Organized results for different dropout levels and reconstruction methods.
+
+### Day 51 — Results Visualization
+- Visualized quality metrics from the automated evaluation results.
+
+### Day 52 — Bar Chart Comparison
+- Created comparative bar charts for the reconstruction methods and quality metrics.
+
+### Day 53 — Combined Quality Analysis
+- Combined quality-metric visualizations to support a broader comparison of reconstruction methods.
+
+### Day 54 — Simulation Module
+- Refactored synthetic sensor-signal generation into `src/simulate.py`.
+- Verified that the module runs and generates a signal matrix with 32 sensors and 600 time samples.
+
+### Day 55 — DAS Reconstruction Module and Test
+- Refactored the `delay_and_sum` function into `src/reconstruct.py`.
+- Created `tests/test_reconstruct.py` to validate the reconstructed image.
+- Verified the expected image dimensions and finite intensity values.
+- In the current synthetic test, the estimated source location matched the configured location of (5 mm, 20 mm).
+- Committed and pushed the changes to GitHub.
+
+### Day 56 — Documentation
+- Updated the README to reflect the current project structure, methods, validation, and development history.
