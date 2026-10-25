@@ -1,0 +1,19 @@
+{
+    "day": 58,
+    "method": "Delay-and-Sum (DAS)",
+    "number_of_sensors": 32,
+    "signal_matrix_shape": [
+        32,
+        600
+    ],
+    "image_shape": [
+        100,
+        100
+    ],
+    "maximum_intensity": 31.993031026420006,
+    "estimated_source_x_mm": 5.000000000000001,
+    "estimated_source_y_mm": 20.0,
+    "true_source_x_mm": 5.0,
+    "true_source_y_mm": 20.0,
+    "image_file": "day58_das_reconstruction.png"
+}
