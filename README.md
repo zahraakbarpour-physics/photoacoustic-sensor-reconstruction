@@ -144,8 +144,6 @@ It is not yet a validated physical wave-propagation model and has not been estab
 
 ## Development Log
 
-## Development Log
-
 ### Days 1–2 — Project Setup and Git Workflow
 - Initialized the project and established a Git/GitHub workflow.
 - Practiced staging, committing, and pushing changes.
@@ -296,8 +294,26 @@ It is not yet a validated physical wave-propagation model and has not been estab
 - Refactored the `delay_and_sum` function into `src/reconstruct.py`.
 - Created `tests/test_reconstruct.py` to validate the reconstructed image.
 - Verified the expected image dimensions and finite intensity values.
+- Confirmed that the estimated source location matched (5 mm, 20 mm) in the synthetic test configuration.
 - In the current synthetic test, the estimated source location matched the configured location of (5 mm, 20 mm).
 - Committed and pushed the changes to GitHub.
 
 ### Day 56 — Documentation
 - Updated the README to reflect the current project structure, methods, validation, and development history.
+
+### Day 57 — Automated Reconstruction Pipeline
+- Created `src/run_pipeline.py` to connect signal simulation and DAS image reconstruction.
+- Executed the pipeline successfully.
+- Verified the reconstructed image dimensions and estimated source location.
+
+### Day 58 — Saving Reconstruction Results
+- Updated the pipeline to save the DAS reconstruction image and numerical results.
+- Saved `day58_das_reconstruction.png` and `day58_das_results.json` in the `outputs/` directory.
+- Verified that the changes were committed and pushed to GitHub.
+
+### Day 59 — Testing and Validation
+- Installed `pytest` for automated testing.
+- Ran `python -m pytest -v`.
+- Passed the DAS reconstruction test.
+- Executed the reconstruction pipeline successfully.
+- Confirmed that the local Git working tree was clean and synchronized with `origin/main`.
